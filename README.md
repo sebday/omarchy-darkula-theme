@@ -114,5 +114,5 @@ The active Hyprland border is a cyan-to-pink gradient
 
 ## Notes
 
-`libadwaita-gtk.css` supplies `@define-color` overrides for GTK4/libadwaita apps such as Nautilus & file dialogs. Stock Omarchy does not deploy GTK4 palette CSS; this file is for a patched install that generates it from `colors.toml` and writes `~/.config/gtk-4.0/gtk.css` on theme switch.
+GTK3 and libadwaita colors are generated from `colors.toml` by the hyprdots `themed/*.tpl` templates on `omarchy theme set`. Do not ship a static `libadwaita-gtk.css` here — it would block that generation.
 
